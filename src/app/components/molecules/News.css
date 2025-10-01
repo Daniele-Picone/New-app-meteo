@@ -1,0 +1,34 @@
+
+
+
+.card_wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    gap: 13px;
+}
+.img_container{
+    width: 50%;
+}
+.card-news{
+    width: 300px ;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 1rem;
+}
+.news_context{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    font-size: 1rem;
+   
+}
+.card-news img{
+    max-width:100% ;
+}
