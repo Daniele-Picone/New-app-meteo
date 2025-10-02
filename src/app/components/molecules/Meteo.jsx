@@ -3,6 +3,7 @@
 "use client"
 import { useEffect, useState } from "react"
 import './Meteo.css'
+import Link from "next/link";
 
 
 
@@ -42,7 +43,21 @@ export default function MeteoSection(){
     
     return(
         <div className="MeteoSection">
-        <h2 className="text-xl font-bold mb-2">Meteo</h2>
+          <div className="logo_section">
+              <h2 className="text-xl font-bold mb-2">Meteo</h2>
+        <a 
+  href="https://www.weatherapi.com/" 
+  title="Free Weather API" 
+  target="_blank" 
+  rel="noopener noreferrer"
+>
+  <img 
+    src="//cdn.weatherapi.com/v4/images/weatherapi_logo.png" 
+    alt="Weather data by WeatherAPI.com" 
+    border="0" 
+  />
+</a>
+          </div>
         
         {/* Input città */}
         <div className="input_zone">
