@@ -16,8 +16,10 @@ export default function NewsSection() {
 }, []);
 
   return (
+    <div className="newsSection">
+    <h2 className="wrapper_news_title" >📰 Ultime notizie</h2>
+
     <div className="card_wrapper" >
-      <h2 className="wrapper_news_title" >📰 Ultime notizie</h2>
       {articles.map((a) => (
         <div key={a.id} className="card-news" >
           <div className="img_container">
@@ -30,5 +32,11 @@ export default function NewsSection() {
         </div>
       ))}
     </div>
+    </div>
   );
 }
+
+
+
+
+

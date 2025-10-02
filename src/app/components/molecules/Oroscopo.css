@@ -2,18 +2,44 @@
 
 .oroscope_section{
     width: 400px;
+    margin-right: 50px;
 }
-.oroscope_wrapper{
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    max-width: 400px;
-  
+.oroscope_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 78vh;           /* altezza piena schermo */
+  overflow-y: auto;        /* scroll verticale */
+  padding: 1rem;
+  box-sizing: border-box;
+scrollbar-width: none;   
+  -ms-overflow-style: none; 
 }
 
-.oroscope_card{
-    border: 2px solid black;
-    max-width: 300px;
-    border-radius: 14px;
-    padding: 2rem;
+.oroscope_wrapper::-webkit-scrollbar {
+  display: none; 
+}
+
+.oroscope_card {
+  border: 2px solid #CCCCCC;
+  border-radius: 14px;
+  padding: 1rem;
+  height: calc((100vh - 2rem - (14px * 2)) / 3); 
+  box-sizing: border-box;
+  background-color: #F3E6FF;
+}
+.oroscope_card h2{
+    color: #9B5DE5;
+    font-size: 1.6rem;
+}
+
+
+
+
+@media (min-width: 365px) and (max-width: 800px){
+  
+    .oroscope_section{
+        display: none;
+    }
+ 
 }

@@ -77,8 +77,8 @@ export default function MeteoSection(){
                  <div className="fore_card_right">
                 <p>{day.day.condition.text}</p>
                     <div className="right_temp">
-                        <p>{day.day.mintemp_c}°C</p>
-                        <p>{day.day.maxtemp_c}°C</p>
+                        <p className="min_temp">{day.day.mintemp_c}°C</p> 
+                         <span>{day.day.maxtemp_c}°C</span>
                     </div>
                  </div>
                 </div>
@@ -93,11 +93,11 @@ export default function MeteoSection(){
     <p>Caricamento meteo...</p>
   ) : forecast && forecast.length > 0 && forecast[0].hour ? (
     <div className="hourly_forecast">
-      <h3>Meteo ora per ora {selectedCity} - {forecast[0].date}</h3>
+      <h3 className="hour_title" >Meteo ora per ora {selectedCity} - {forecast[0].date}</h3>
       <div className="hourly_cards">
         {forecast[0].hour.map((hourData) => (
           <div key={hourData.time} className="hour_card">
-            <p>{hourData.time.split(" ")[1]}</p>
+            <p className="hour_hourly_card" >{hourData.time.split(" ")[1]}</p>
             <img src={hourData.condition.icon} alt={hourData.condition.text} />
             <p>{hourData.temp_c}°C</p>
             <p>{hourData.condition.text}</p>

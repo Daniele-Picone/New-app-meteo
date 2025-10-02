@@ -3,6 +3,17 @@
 .heroSection{
  display: flex;
  justify-content: space-between;
+ align-items: center;
+ max-height: 95vh;
+ 
+}
 
- align-items: flex-start;
+
+
+@media (min-width: 365px) and (max-width: 800px){
+  
+    .heroSection{
+        width: 100%;
+    }
+ 
 }
