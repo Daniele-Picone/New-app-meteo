@@ -33,7 +33,7 @@ scrollbar-width: none;
     font-size: 1.6rem;
 }
 
-@media (min-width: 801px) and (max-width: 1200px){
+@media (min-width: 801px) and (max-width: 1440px){
   .oroscope_section{
     width: 80%;
     display: flex;
