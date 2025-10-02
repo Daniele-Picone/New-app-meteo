@@ -33,7 +33,34 @@ scrollbar-width: none;
     font-size: 1.6rem;
 }
 
+@media (min-width: 801px) and (max-width: 1200px){
+  .oroscope_section{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding: 2rem;
+  }
+    .oroscope_wrapper {
+    display: flex;
+    height: auto;
+    flex-direction: row;
+    overflow-x: auto;   /* abilita scroll */
+    overflow-y: hidden; /* evita scroll verticale */
+    width: 100%;        /* prende tutta la larghezza disponibile */
+    gap: 1rem;          /* spazio tra card */
+  }
 
+  .oroscope_card {
+    flex-shrink: 0;     /* impedisce di ridursi */
+    width: 250px;       /* larghezza fissa */
+    height: 500px;
+    padding: 1rem;
+    font-size: 1.2rem;
+  }
+}
 
 
 @media (min-width: 365px) and (max-width: 800px){

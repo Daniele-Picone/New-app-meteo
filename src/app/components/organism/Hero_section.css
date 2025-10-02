@@ -4,10 +4,20 @@
  display: flex;
  justify-content: space-between;
  align-items: center;
- max-height: 95vh;
+ min-height: 95vh;
  
 }
 
+@media (min-width: 801px) and (max-width: 1200px){
+    .heroSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+       
+       
+    }
+}
 
 
 @media (min-width: 365px) and (max-width: 800px){
@@ -17,3 +27,4 @@
     }
  
 }
+
