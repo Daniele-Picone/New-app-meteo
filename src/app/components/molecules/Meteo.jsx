@@ -8,8 +8,8 @@ import Link from "next/link";
 
 
 export default function MeteoSection(){
-    const [city, setCity] = useState("Rome"); // città di default
-    const [selectedCity, setSelectedCity] = useState("Rome");
+    const [city, setCity] = useState("Roma"); // città di default
+    const [selectedCity, setSelectedCity] = useState("Roma");
     const [forecast, setForecast] = useState(null);
     const [meteo, setMeteo] = useState(null);
     const [loading, setLoading] = useState(false);
