@@ -27,7 +27,7 @@ export default function NewsSection() {
           </div>
             <div className="news_context">
               <h3>{a.title}</h3>
-              <p>{a.source.name}</p>
+              <a href={a.url}>{a.source.name}</a>
             </div>
         </div>
       ))}
