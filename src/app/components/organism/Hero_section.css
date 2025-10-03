@@ -8,7 +8,7 @@
  
 }
 
-@media (min-width: 801px) and (max-width: 1440px){
+@media (min-width: 577px) and (max-width: 1024px){
     .heroSection{
         display: flex;
         flex-direction: column;
@@ -20,10 +20,12 @@
 }
 
 
-@media (min-width: 365px) and (max-width: 800px){
+@media (min-width: 320px) and (max-width: 576px){
   
     .heroSection{
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
  
 }
